@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="appointment.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+            <h2>Request an Appointment</h2><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 ">
+                        <div class="row">
+                            <div class="col-6 col-sm-2 ">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="col-6 ">
+                                <p> 022 - 25101102<br>
+                                    <span>Monday - Saturday</span><br>
+                                    <span>9AM - 10PM</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 ">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="col-9 ">
+                                <p>reception@polyclinic.com</p>
+                            </div>
+                        </z`div>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="https://formbold.com/s/FORM_ID" method="POST">
+
+                <div class="formbold-mb-5">
+                    <label for="patid" class="formbold-form-label"> Patient Id </label>
+                    <input type="patid" name="patid" id="patid" placeholder="Enter your Patient Id"
+                        class="formbold-form-input" />
+                </div>
+                <div class="formbold-mb-5">
+                    <label for="name" class="formbold-form-label"> Full Name </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Full Name"
+                        class="formbold-form-input" />
+                </div>
+                <div class="formbold-mb-5">
+                    <label for="phone" class="formbold-form-label"> Phone Number </label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
+                        class="formbold-form-input" />
+                </div>
+
+                <div class="flex flex-wrap formbold--mx-3">
+                    <div class="w-full sm:w-half formbold-px-3">
+                        <div class="formbold-mb-5 w-full">
+                            <label for="date" class="formbold-form-label"> Date </label>
+                            <input type="date" name="date" id="date" class="formbold-form-input" />
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-half formbold-px-3">
+                        <div class="formbold-mb-5 w-full">
+                            <label for="time" class="formbold-form-label"> Time </label>
+                            <!-- <input type="time" name="time" id="time" class="formbold-form-input" /> -->
+                            <select class="formbold-form-input" aria-label="Default select example"
+                                placeholder="Select time slot">
+                                <option value="" disabled selected hidden>Choose a Time slot</option>
+                                <option value="1">11 am - 12 pm</option>
+                                <option value="2">12 pm - 1 pm</option>
+                                <option value="3">1 pm - 2 pm</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formbold-mb-5">
+                    <label for="email" class="formbold-form-label"> Doctor to consult</label>
+                    <!-- <input type="email" name="email" id="email" placeholder="Select"
+                        class="formbold-form-input" /> -->
+                    <select class="formbold-form-input" aria-label="Default select example"
+                        placeholder="Select time slot">
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="1">Dr. Nilam (M.D. ENT)</option>
+                        <option value="2">Dr. Samiksha (M.D. Gen. Medicine)</option>
+                        <option value="3">1 P.M. - 2 P.M.</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="formbold-btn">Book Appointment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

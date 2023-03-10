@@ -1,0 +1,59 @@
+Title : Digital Agricultural Procurement Market
+Platform : MySQL , J2EE(Spring Boot), React Duration : 1 Month
+Description : Digital APM is a Agricultural Procurement Management Software digitalizing the agricultural procurement by
+creating a common All India online portal for the farmers and vendors, allowing a farmer to sell his produce as well
+as vendors to buy from anywhere in India by conducting E-Auctions which guarantees fair prices to the farmers,
+thus avoiding the middle-men and providing a flexible market.~
+*----------------------------------------------------------------
+
+
+
+Description : Polyclinic Management System is a web-based application that provides the patient or any user an effective way 
+of booking appointments with the Doctors. Instead of calling the clinic for appointments, patients can easily book them online.
+Also the Doctors will be able to view the appointments scheduled for the day. This system is developed in React, Using SpringBoot 
+framework and MySQL as a database.
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+Plastic and E-Waste Management System
+
+Platform : Spring Boot , MySQL and React Duration : 1 Month
+
+Description : The main aim of this project is to initiate donations of plastic and e-waste that gets accumulated in households or
+
+nearby areas. This donated plastic will be further sent for recycling process. The main purpose of the project is to
+
+create awareness about the donation of plastic and e-waste for recycling in an efficient and Eco-friendly way
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Title : Farmer's Go Mart
+
+Platform : J2EE Duration : 1 Month
+
+Description : Farmer's Go Mart is a Supply Chain Management System that simplifies the process of buying and selling goods
+through web application on a digitized platform at fair prices. This helps to eliminate unnecessary links and make
+the entire process more transparent. This system is developed in React using SpringBoot framework and MySQL as
+a database. This Web application is user friendly and transaction history is well maintaine
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Title : Student Portal
+
+Platform : J2EE Duration : 1 Month
+
+Description : STUDENT PORTAL is a web based application where all the information and all services that teacher and students
+
+need can be found in one place. This portal is used to access timetable, assignment, displaying notice and also
+
+provide contact details of school and teacher. This project developed in J2EE by using Spring Boot and RESTful
+
+webservices. For UI React is used and MySQL is used for database. This web application provide user-friendly,
+
+secure, Personalized, faster and better communication.

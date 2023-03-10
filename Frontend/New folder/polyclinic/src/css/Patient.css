@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+section .patient_home_banner {
+  padding-bottom: 80px;
+  margin-top: 0px;
+}
+
+.mb-6{
+  margin-bottom: 200px !important;
+}

@@ -1,0 +1,7 @@
+INSERT INTO doctor VALUES(1002,'Samiksha Jadhav', 30, 'MD', 'General Medicine', 8, 'samiksha@gmail.com', 'Samiksha123', 'Samiksha123');
+
+INSERT INTO doctor VALUES(1001,'Nilam Vatkar', 34, 'MD', 'Health Administration', 14, 'nilam@gmail.com', 'Nilam123', 'Nilam123');
+
+
+[{"doctor_id":1001,"doctor_name":"Nilam Vatkar","doctor_age":34,"qualification":"MD","specialization":"Health Administration",
+"experience":14,"email":"nilam@gmail.com","password":"Nilam123","confirm_password":"Nilam123","time_slot":null}]

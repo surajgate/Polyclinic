@@ -1,0 +1,99 @@
+---------------------- MY-SQL ----------------------
+
+create database polyclinic;
+
+use polyclinic;
+
+
+create table patient (
+patient_id int primary key,
+first_name varchar(50) not null,
+last_name varchar(50) not null,
+age int not null,
+blood_group varchar(10) not null,
+gender varchar(10) not null,
+date_of_birth date not null,
+phone_number varchar(20) not null,
+address varchar(50) not null,
+username varchar(20) not null,
+email varchar(30) not null,
+password varchar(30) not null,
+confirm_password varchar(30) not null,
+doctor_id int not null,
+unique(email,username),
+foreign key (doctor_id) references doctor(doctor_id)
+);
+
+
+
+create table doctor (
+doctor_id int primary key,
+doctor_name varchar(50) not null,
+age int not null,
+qualification varchar(30),
+specialization varchar(30),
+experience int not null,
+email varchar(50) not null,
+password varchar(20) not null,
+confirm_password varchar(20) not null,
+unique(email)
+);
+
+
+create table appointment(
+appointment_number int primary key,
+patient_id int not null,
+doctor_id int not null,
+date_of_appointment date not null,
+time_of_appointment varchar(20),
+foreign key (patient_id) references patient (patient_id),
+foreign key (doctor_id) references doctor (doctor_id)
+);
+
+
+---------------------- ORACLE ----------------------
+
+create table doctor (
+doctor_id number(10) primary key,
+doctor_name varchar2(50) not null,
+age number(3) not null,
+qualification varchar2(30),
+specialization varchar2(30),
+experience int not null,
+email varchar2(50) not null,
+password varchar2(20) not null,
+confirm_password varchar2(20) not null,
+unique(email)
+);
+
+
+create table patient (
+patient_id number(10) primary key,
+first_name varchar2(50) not null,
+last_name varchar2(50) not null,
+age number(10)not null,
+blood_group varchar2(10) not null,
+gender varchar2(10) not null,
+date_of_birth date not null,
+phone_number varchar2(20) not null,
+address varchar2(50) not null,
+username varchar2(20) not null,
+email varchar2(30) not null,
+password varchar2(30) not null,
+confirm_password varchar2(30) not null,
+doctor_id number(10) not null,
+unique(email,username),
+foreign key (doctor_id) references doctor(doctor_id)
+);
+
+
+
+create table appointment(
+appointment_number number(10) primary key,
+patient_id number(10) not null,
+doctor_id number(10) not null,
+date_of_appointment date not null,
+time_of_appointment varchar2(20),
+foreign key (patient_id) references patient (patient_id),
+foreign key (doctor_id) references doctor (doctor_id)
+);

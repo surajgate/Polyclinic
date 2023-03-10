@@ -1,0 +1,193 @@
+import React, { useState } from 'react'
+import $ from 'jquery';
+
+export default function Register() {
+
+  const [firstname , setFirstname] = useState();
+  const [lastname , setLastname] = useState();
+  const [age , setAge] = useState();
+  const [blood_group , setBlood_group] = useState();
+  const [gender , setGender] = useState();
+  const [date_of_birth , setDate_of_birth] = useState();
+  const [phone , setPhone] = useState();
+  const [address , setAddress] = useState();
+  const [email , setEmail] = useState();
+  const [username , setUsername] = useState();
+  const [password , setPassword] = useState();
+  const [confirm_password , setConfirm_password] = useState();
+
+  var M1 = () => {
+
+    setFirstname(document.getElementById("firstname").value);
+    setLastname(document.getElementById("lastname").value);
+    setAge();
+
+    // var first = document.getElementById("firstname").value;
+    // var lastname = document.getElementById("lastname").value;
+    // var age = document.getElementById("age").value;
+    // var blood_group = document.getElementById("blood_group").value;
+    // // var gender = document.getElementsByName("gender").value;
+    // // var blood_group = $('#blood_group').find(":selected").val();
+    // var gender = $('input[name="gender"]:checked').val();
+    // var date_of_birth = document.getElementById("date_of_birth").value;
+    // var phone = document.getElementById("phone").value;
+    // var address = document.getElementById("address").value;
+    // var email = document.getElementById("email").value;
+    // var username = document.getElementById("username").value;
+    // var password = document.getElementById("password").value;
+    // var confirm_password = document.getElementById("confirm_password").value;
+
+    // alert(firstname);
+    // console.log(firstname);
+    // console.log(lastname);
+    // console.log(age);
+    // console.log(blood_group);
+    // console.log(gender);
+    // console.log(date_of_birth);
+    // console.log(phone);
+    // console.log(address);
+    // console.log(email);
+    // console.log(username);
+    // console.log(password);
+    // console.log(confirm_password);
+
+    fetch("http://localhost:8080/patient/savePatient", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        patient_id:3,
+        first_name:firstname,
+        last_name:lastname,
+        patient_age:age,
+        blood_group:blood_group,
+        gender:gender,
+        date_of_birth:date_of_birth,
+        phone_number:phone,
+        address:address,
+        username:username,
+        email:email,
+        password:password,
+        confirm_password:confirm_password,
+        doctor_id:1001
+      })
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data)
+        // xyz("/user-page")
+      });
+  }
+
+ 
+
+  return (
+
+    <div className='container-fluid'>
+      <div class="container">
+        <form class="">
+          <center>
+            <h1 className='form-title'> Patient Registeration Form</h1>
+          </center>
+          <hr /><br />
+
+          <div class="col-sm-10">
+            <div class="form-group row">
+              <label class="col-sm-2">Firstname : </label>
+              <input id="firstname" class='form-control-sm col-sm-4' type="text" name="firstname" placeholder="Firstname"
+                size="15" required />
+            </div><br />
+            <div class="form-group row">
+              <label class="col-sm-2"> Lastname: </label>
+              <input id="lastname" class='form-control-sm col-sm-4' type="text" name="lastname" placeholder="Lastname" size="15"
+                required />
+            </div><br />
+            <div class="form-group row">
+              <label class="col-sm-2"> Age: </label>
+              <input id="age" class='form-control-sm col-sm-4' type="text" name="lastname" placeholder="Age" size="15"
+                required />
+            </div><br />
+            <div class="form-group ">
+              <label class="">
+                Blood Group : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              </label>
+              <select id="blood_group" class='form-control-sm'>
+                <option value="O+ve">O+ve</option>
+                <option value="O-ve">O-ve</option>
+                <option value="A+ve">A+ve</option>
+                <option value="A-ve">A-ve</option>
+                <option value="B+ve">B+ve</option>
+                <option value="B-ve">B-ve</option>
+                <option value="AB+ve">AB+ve</option>
+                <option value="AB-ve">AB-ve</option>
+              </select>
+            </div>
+            <br />
+            <div class="form-group">
+              <label class="">
+                Gender : &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;
+              </label>
+              <input class='form-check-input' type="radio" value="Male" name="gender" /> Male &nbsp;
+              <input class='form-check-input' type="radio" value="Female" name="gender" /> Female &nbsp;
+              <input class='form-check-input' type="radio" value="Other" name="gender" /> Other &nbsp;
+            </div><br />
+
+            <div class="form-group-sm row">
+              <label class="col-sm-2" for="date"> Date Of Birth: </label>
+              <input id="date_of_birth" class='form-control-sm col-sm-4' type="date" name="date"/>
+            </div>
+
+            <br />
+            <div class="form-group-sm row">
+              <label class="col-sm-2">
+                Phone :
+              </label>
+              <input class='form-control-sm col-sm-1' type="text" name="country code" placeholder="Country Code"
+                value="+91" size="2" />&nbsp;
+              <input id="phone" class='form-control-sm col-sm-3' type="text" name="phone" placeholder="phone no."
+                size="10" />
+            </div><br />
+            <div class="form-group row">
+              <label class="col-sm-2">
+                Current Address :
+              </label>
+              <textarea id="address" type="text" class='form-control-sm col-sm-4' cols="80" rows="3" placeholder="Current Address"
+                 required>
+              </textarea>
+            </div><br />
+            <div class="form-group row">
+              <label class="col-sm-2" for="email">Email :</label>
+              <input id="email" class='form-control-sm col-sm-4' type="text" placeholder="Enter Email" name="email"
+                required />
+            </div><br />
+            <div class="form-group row">
+              <label class="col-sm-2"> Username : </label>
+              <input id="username" class='form-control-sm col-sm-4' type="text" name="username" placeholder="Username" size="15"
+                required />
+            </div><br />
+            <div class="form-group row">
+              <label class="col-sm-2" for="psw">Password :</label>
+              <input id="password" class='form-control-sm col-sm-4' type="password" placeholder="Enter Password" name="psw"
+                required />
+            </div><br />
+            <div class="form-group row">
+              <label class="col-sm-2" for="psw-repeat">Confirm Password :</label>
+              <input id="confirm_password" class='form-control-sm col-sm-4' type="password" placeholder="Retype Password"
+                name="psw-repeat" required /><br />
+            </div><br /><br />
+            <div class="form-group row">
+              <div class="col-sm-2"></div>
+              <button class='btn btn-success col-sm-2' type="submit" onClick={M1}>Register</button>
+              <div class="col-sm-2"></div>
+            </div><br />
+          </div>
+
+
+        </form>
+
+      </div>
+    </div>
+  )
+}
