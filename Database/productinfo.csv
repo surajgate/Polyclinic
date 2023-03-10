@@ -1,0 +1,5 @@
+doctor_id,doctor_name,doctor_age,qualification,specialization,experience,email,password,confirm_password
+1001,"Nilam Vatkar",34,MD,"Health Administration",14,nilam@gmail.com,Nilam123,Nilam123
+1002,"Samiksha Jadhav",30,MD,"General Medicine",8,samiksha@gmail.com,Samiksha123,Samiksha123
+1003,"Tripti Verma",32,BPT,Physiotherapist,10,tripti@gmail.com,Tripti123,Tripti123
+1004,"Sunaina Chaudhary",44,MD,"gynecologist ",18,sunaina@gmail.com,Sunaina123,Sunaina123
