@@ -115,7 +115,7 @@ export default function Register() {
             </div><br />
             <div class="form-group ">
               <label class="">
-                Blood Group : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Blood Group : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
               </label>
               <select id="blood_group" name='blood_group' class='form-control-sm' value={user.blood_group} onChange={HandleInputs} >
                 <option value="O+ve">O+ve</option>

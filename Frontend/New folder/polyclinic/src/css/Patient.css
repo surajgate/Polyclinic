@@ -11,3 +11,14 @@ section .patient_home_banner {
 .mb-6{
   margin-bottom: 200px !important;
 }
+
+h2{
+  font-family: 'Zilla Slab', serif;
+
+}
+
+footer{
+  background-color: black;
+  color: white;
+  
+}

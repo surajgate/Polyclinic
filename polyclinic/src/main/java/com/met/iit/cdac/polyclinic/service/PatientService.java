@@ -4,6 +4,8 @@ import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.met.iit.cdac.polyclinic.dao.PatientDao;
 import com.met.iit.cdac.polyclinic.model.Patient;
@@ -14,6 +16,7 @@ public class PatientService {
 	@Autowired
 	private PatientDao dao;
 	
+	@Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
 	public void save(Patient patient) {
 		
 		if(patient.getPatient_id() < 0) {

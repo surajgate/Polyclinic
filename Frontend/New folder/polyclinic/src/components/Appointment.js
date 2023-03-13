@@ -4,6 +4,7 @@ import "../css/Appointment.css"
 import { p_id } from './Login';
 export default function Appointment() {
 
+    document.body.style.backgroundColor = "white";
     const navigate = useNavigate();
     const [user, setUser] = useState({
 

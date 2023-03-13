@@ -9,7 +9,7 @@ export default function Doctor() {
     // let password1 = "";
 
     document.body.style.backgroundImage = "none";
-    document.body.style.backgroundColor = "rgb(84, 139, 187)"
+    document.body.style.backgroundColor = "rgb(215, 230, 253)"
 
     const navigate = useNavigate();
     // const [xyz, setXyz] = useState([]);
@@ -75,7 +75,7 @@ export default function Doctor() {
         <div className="container-fluid w-25 p-3 h-100 mt-5 ">
 
             <form className="form-control-md">
-                <h1 className="text-center mb-4 display-5">Login</h1>
+                <h1 className="text-center mb-4 display-5">Doctor Login</h1>
                 <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Email address</label>
                     <input type="text" className="form-control" id="exampleInputEmail1" />
